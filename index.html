@@ -17,6 +17,8 @@
   </head>
 
   <body>
+    <style>.btn {margin: 10px auto;}
+  </style>
 
     <nav class="site-header sticky-top py-1">
       <div class="container d-flex flex-column flex-md-row justify-content-between">
@@ -33,30 +35,54 @@
         <a class="py-2 d-none d-md-inline-block" href="#">%username%</a>
       </div>
     </nav>
-<body>
-    {% block page_content %}
-  
-  
-  
-    {% endblock %}
-</body>
+    <main role="main">
 
+      <div class="album py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <p class="card-text">CUCM FRA</p>
+                  <small class="text-muted">10.10.20.1</small>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-grid gap-2 d-md-block">
+                      <button type="button" class="btn btn-success">List Phone</button>
+                      <button type="button" class="btn btn-primary">List Users</button>
+                      
+                        <button type="button" class="btn btn-warning btn-block">Create new user</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <p class="card-text">CUCM ATL</p>
+                  <small class="text-muted">10.10.20.1</small>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-grid gap-2 d-md-block">
+                      <button type="button" class="btn btn-success">List Phone</button>
+                      <button type="button" class="btn btn-primary">List Users</button>
+                      
+                        <button type="button" class="btn btn-warning btn-block">Create new user</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+        </div>
+        </div>
+      
+    </main>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-    <script src="../../../../assets/js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
   </body>
 </html>
