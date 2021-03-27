@@ -14,43 +14,52 @@
 
     <!-- Custom styles for this template -->
     <link href="css/product.css" rel="stylesheet">
-         
     <link href="css/signin.css" rel="stylesheet">
-    
+
+
   </head>
-  <nav class="site-header sticky-top py-1">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-      <a href="#">
-        <svg width="1cm" height="1cm" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <rect x="100" y="100" width="800" height="800" fill="orange" />
-        </svg>
-        <strong>Home</strong>
-      </a>
-      <a class="py-2 d-none d-md-inline-block" href="#">%username%</a>
-    </div>
-  </nav>
-  <body class="text-center">
-      
-    <form class="form-signin">
-        <svg width="4cm" height="4cm" viewBox="100 100 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <rect x="100" y="100" width="200" height="200" fill="orange" />
-        </svg>
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Username" autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password">
-      <div class="checkbox mb-3">
-        <a href="https://sriharshavardhant.github.io"> <button class="btn btn-lg btn-primary btn-block" type="button" onclick="processLogin()">Sign in</button></a>
-      </div>
-    </form>
-    <script>
-      function processLogin(){
-        if (document.getElementById('inputEmail').value == 'user' 
-        && document.getElementById('inputPassword').value == 'password'){
-            location.href = "/";
-        }
-      }
-    </script>
-  </body>
+  <body>
+ 
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#">
+                <svg width="1cm" height="1cm" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <rect x="100" y="100" width="800" height="800" fill="orange" />
+                </svg>
+                <strong>Home</strong>
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="#">%username%</a>
+        </div>
+    </nav>
+
+
+        <div class="py-5 container">
+            
+        <form class="form-signin">
+            
+            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Username" autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password">
+            <div class="checkbox mb-3">
+                <a href="https://sriharshavardhant.github.io"> <button class="btn btn-lg btn-primary btn-block" type="button"
+                        onclick="processLogin()">Sign in</button></a>
+            </div>
+        </form>
+        </div>
+        <script>
+            function processLogin() {
+                if (document.getElementById('inputEmail').value == 'user'
+                    && document.getElementById('inputPassword').value == 'password') {
+                    location.href = "/";
+                }
+            }
+        </script>
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    </body>
 </html>
