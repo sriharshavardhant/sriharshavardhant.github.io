@@ -13,9 +13,22 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="css/product.css" rel="stylesheet">
+         
     <link href="css/signin.css" rel="stylesheet">
+    
   </head>
-  
+  <nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a href="#">
+        <svg width="1cm" height="1cm" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <rect x="100" y="100" width="800" height="800" fill="orange" />
+        </svg>
+        <strong>Home</strong>
+      </a>
+      <a class="py-2 d-none d-md-inline-block" href="#">%username%</a>
+    </div>
+  </nav>
   <body class="text-center">
       
     <form class="form-signin">
@@ -28,8 +41,16 @@
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Password">
       <div class="checkbox mb-3">
-        <a href="https://sriharshavardhant.github.io"> <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></a>
+        <a href="https://sriharshavardhant.github.io"> <button class="btn btn-lg btn-primary btn-block" type="button" onclick="processLogin()">Sign in</button></a>
       </div>
     </form>
+    <script>
+      function processLogin(){
+        if (document.getElementById('inputEmail').value == 'user' 
+        && document.getElementById('inputPassword').value == 'password'){
+            location.href = "/";
+        }
+      }
+    </script>
   </body>
 </html>
